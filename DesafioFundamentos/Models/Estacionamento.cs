@@ -68,8 +68,13 @@ namespace DesafioFundamentos.Models
                 int index = veiculos.FindIndex(c => Carro(c, placa));
 
                 if (index != -1)
+                {
+
 
                     Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+                }
+                    veiculos.Remove(placa);
+
             }
             else
             {
